@@ -53,15 +53,16 @@ main{
       object-fit: contain;
     }
     #text{
-      position: relative;
-      color: #fff;
+      position: absolute;
+      top: 15vh;
+      color: #ce157b;
       font-size: 8vw;
     }
   }
   .sec{
     position: relative;
     min-height: 500px;
-    padding: 100px;
+    padding: 8vw;
     .content{
       position: relative;
       z-index: 2;
@@ -79,6 +80,8 @@ main{
 
 }
 
+/*LOADER*/
+
 #lastray{
   margin: auto;
   border-radius: 100%;
@@ -92,15 +95,6 @@ main{
   top: 50%;
 }
 #loading-page{
-
-
-
-
-  display: none;
-
-
-
-
   background: var(--back-color);
   border-radius: 100%;
   top:50%;
@@ -217,17 +211,17 @@ main{
 }
 /*ANIMATIONS*/
 @keyframes pump {
-    0% {width: 50px; height: 50px;}
-    83% {width: 88px; height: 88px;}
-    85% {width: 90px; height: 90px;}
-    100% {width: 50px; height: 50px;}
+  0% {width: 50px; height: 50px;}
+  83% {width: 88px; height: 88px;}
+  85% {width: 90px; height: 90px;}
+  100% {width: 50px; height: 50px;}
 }
 @keyframes ray {
-    0% {width: 10px; height: 10px; opacity: 1; border-width: 1px;}
-    100% {width: 200px; height: 200px; opacity: 0; border-width: 5px;}
+  0% {width: 10px; height: 0px; opacity: 1; border-width: 1px;}
+  100% {width: 200px; height: 200px; opacity: 0; border-width: 5px;}
 }
 @keyframes particle {
-    0% {left:0%; top:0%; opacity: 0;}
-    70% {opacity: 1;}
-    100% {left:50%; top:50%; opacity: 1;}
+  0% {left:0%; top:0%; opacity: 0;}
+  70% {opacity: 1;}
+  100% {left:50%; top:50%; opacity: 1;}
 }
