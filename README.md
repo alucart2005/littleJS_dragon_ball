@@ -9,7 +9,7 @@ My first steps in JavaScript 😊
 
 ## Preview 
 
-![..]()
+![..](https://github.com/alucart2005/littleJS_dragon_ball/blob/main/img/preview.png?raw=true)
 
 ## Hiring 
 If you want to hire me you can write to napoleonanaya@gmail.com
