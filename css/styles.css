@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
 :root {
   --main-color: #f7c110;
   --main-color-dark: #fa5514;
@@ -16,6 +16,68 @@
 
 body {
   background: var(--back-color);
+}
+
+main {
+  transition: 0.8s;
+  background: #000522;
+}
+main section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s;
+}
+main section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to top, #000522, transparent);
+  z-index: 1;
+}
+main section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+main section .character {
+  top: 43%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main section #text {
+  position: relative;
+  color: #fff;
+  font-size: 8vw;
+}
+main .sec {
+  position: relative;
+  min-height: 500px;
+  padding: 100px;
+}
+main .sec .content {
+  position: relative;
+  z-index: 2;
+}
+main .sec .content h2 {
+  font-size: 4vw;
+  margin-bottom: 10px;
+  color: #dd11e4;
+}
+main .sec .content p {
+  font-size: 1.5vw;
+  color: #fff;
 }
 
 #lastray {

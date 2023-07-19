@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
 
 :root {
   --main-color: #f7c110;
@@ -15,6 +15,68 @@
 }
 body {
   background: var(--back-color);
+}
+
+main{
+  transition: 0.8s;
+  background: #000522;
+  section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+    &::before{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(to top, #000522, transparent);
+      z-index: 1;
+    }
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+
+    }
+    .character{
+      top: 43% ;
+      object-fit: contain;
+    }
+    #text{
+      position: relative;
+      color: #fff;
+      font-size: 8vw;
+    }
+  }
+  .sec{
+    position: relative;
+    min-height: 500px;
+    padding: 100px;
+    .content{
+      position: relative;
+      z-index: 2;
+      h2{
+        font-size: 4vw;
+        margin-bottom: 10px;
+        color: #dd11e4;
+      }
+      p{
+        font-size: 1.5vw;
+        color: #fff;
+      }
+    }
+  }
+
 }
 
 #lastray{
@@ -38,7 +100,7 @@ body {
 
 
 
-  
+
   background: var(--back-color);
   border-radius: 100%;
   top:50%;
